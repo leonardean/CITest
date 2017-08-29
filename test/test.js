@@ -9,4 +9,9 @@ describe('CI Test App', () => {
 		.expect(200)
 		.expect('Hello World', done)
 	})
+	it('should return Pong', (done) => {
+		agent.get('/')
+		.expect(200)
+		.expect('pong', done)
+	})
 })
