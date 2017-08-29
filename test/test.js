@@ -10,7 +10,7 @@ describe('CI Test App', () => {
 		.expect('Hello World', done)
 	})
 	it('should return Pong', (done) => {
-		agent.get('/')
+		agent.get('/ping')
 		.expect(200)
 		.expect('Pong', done)
 	})
