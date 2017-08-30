@@ -43,8 +43,7 @@ jobs:
           name: deploy to server
           command: |
             echo Connecting to server via SSH
-            ssh -o "StrictHostKeyChecking no" root@47.92.98.99 
-            echo Connected to server
-            echo $NODE_ENV
+            sudo ssh -o "StrictHostKeyChecking no" root@47.92.98.99 -i /root/thug-life.pem "echo Connected to server; cd /; ls"
+            
 
 
