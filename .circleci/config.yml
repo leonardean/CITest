@@ -35,5 +35,15 @@ jobs:
         
       # run tests!
       - run: npm test
+      - add_ssh_keys:
+          fingerprints:
+            - "27:70:5c:db:15:87:bd:2b:7b:2c:70:b8:3c:60:99:41"
+      - deploy:
+          name: deploy to server
+          commands: |
+            echo Connecting to server via SSH
+            ssh root@47.92.98.99
+            echo Connected to server
+            echo $NODE_ENV
 
 

@@ -1,4 +1,4 @@
-var request = require('supertest'),
+const request = require('supertest'),
     should = require('should'),
     app = require('../index.js')
 
