@@ -43,7 +43,7 @@ jobs:
           name: deploy to server
           command: |
             echo Connecting to server via SSH
-            ssh-agent root@47.92.98.99
+            ssh -o "StrictHostKeyChecking no" root@47.92.98.99 
             echo Connected to server
             echo $NODE_ENV
 
