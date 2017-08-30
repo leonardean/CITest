@@ -43,8 +43,7 @@ jobs:
           name: deploy to server
           command: |
             echo Connecting to server via SSH
-            ssh root@47.92.98.99
-            yes
+            ssh root@47.92.98.99 yes
             echo Connected to server
             echo $NODE_ENV
 
